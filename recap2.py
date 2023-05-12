@@ -3,7 +3,10 @@ frase = input("Inserisci la frase di cui contare le parole occorse: \n")
 
 
 parole = frase.split()
+print("Frase splittata: ")
 print(frase.split())
+
+#definizione dizionario
 diz={}
 
 for p in parole:
@@ -11,4 +14,5 @@ for p in parole:
         diz[p] = 1
     else:
         diz[p] +=1
-print (diz)
+
+print ("\nLe occorrenze delle parole sono le seguenti\n",diz)
